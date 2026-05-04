@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Pramish Kumar Dravid - Portfolio</title>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: #0b1220;
+    color: #e5e7eb;
+    line-height: 1.6;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px;
+    z-index: 1000;
+    border-bottom: 1px solid #1f2937;
+  }
+
+  nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+  }
+
+  nav a:hover {
+    color: #38bdf8;
+  }
+
+  /* HERO */
+  header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background: radial-gradient(circle at top, #1e293b, #0b1220);
+  }
+
+  header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    animation: fadeIn 1s ease-in;
+  }
+
+  header p {
+    max-width: 700px;
+    color: #94a3b8;
+    animation: fadeIn 1.5s ease-in;
+  }
+
+  .highlight {
+    color: #38bdf8;
+  }
+
+  /* SECTIONS */
+  section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 90px 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.8s ease;
+  }
+
+  section.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #38bdf8;
+  }
+
+  .card {
+    background: #111827;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #1f2937;
+    margin-bottom: 15px;
+  }
+
+  /* GRID */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+  }
+
+  /* ICONS */
+  .icon {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 6px;
+    fill: #38bdf8;
+  }
+
+  /* CONTACT */
+  .contact p {
+    margin: 8px 0;
+  }
+
+  a {
+    color: #38bdf8;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #1f2937;
+    color: #64748b;
+  }
+
+  /* ANIMATION */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* MOBILE */
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 2rem;
+    }
+    nav {
+      flex-wrap: wrap;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#experience">Experience</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- HERO -->
+<header>
+  <h1>Pramish Kumar Dravid</h1>
+  <p>
+    <span class="highlight">Aspiring IT System Administrator</span> | Network and Security Enthusiast<br><br>
+    Motivated fresher with hands-on troubleshooting experience and a strong foundation in networking.
+    Currently preparing for CCNA and seeking entry-level IT opportunities.
+  </p>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    I am an aspiring IT System Administrator / Network Engineer with a strong interest in networking and system support.
+    <br><br>
+    ✔ Currently preparing for CCNA certification<br>
+    ✔ Passionate about troubleshooting and system reliability<br>
+    ✔ Interested in network security and infrastructure
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <h2>Education</h2>
+  <div class="card">
+    🎓 BSc. CSIT (Waiting for Result)
+  </div>
+  <div class="card">
+    🎓 +2 Science — GPA: 3.71
+  </div>
+  <div class="card">
+    🎓 SEE — GPA: 3.75
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="card">
+    <b>System Administrator / Internship</b> – Tribhuvan International Airport (IT Department)
+    <br><br>
+    • Troubleshooting technical and network issues<br>
+    • Diagnosing connectivity problems<br>
+    • Assisting users and supporting IT operations
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+
+  <div class="grid">
+    <div class="card">🌐 Networking: IP Addressing, DNS, DHCP, Switching, Routing, VPN, OSPF, RIP</div>
+    <div class="card">🖥 System Admin: Basic Linux, Windows</div>
+    <div class="card">🖥 System Monitoring and Ticket logging: Zabbix, JIRA</div>
+    <div class="card">🛠 Troubleshooting & IT Support</div>
+    <div class="card">🔌 Network Connectivity Diagnosis</div>
+    <div class="card">🔐 Network Security Concepts</div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="card">
+    💻 <b>Home Lab Project</b><br><br>
+    Built a home lab using VirtualBox to practice networking and Linux system administration. Packet capture and analysis using Wireshark.
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+
+  <div class="card contact">
+    📧 Email: <a href="mailto:dravidprm004@gmail.com">dravidprm004@gmail.com</a><br>
+    📱 Phone: +977-9767243143<br>
+    🔗 LinkedIn: <a href="https://www.linkedin.com/in/pramishdravid/" target="_blank">
+      linkedin.com/in/pramishdravid
+    </a>
+  </div>
+</section>
+
+<footer>
+  © 2026 Pramish Kumar Dravid | Built for IT System Administration Career Path
+</footer>
+
+<!-- JS: scroll animation -->
+<script>
+  const sections = document.querySelectorAll("section");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, { threshold: 0.1 });
+
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+</script>
+
+</body>
+</html>
